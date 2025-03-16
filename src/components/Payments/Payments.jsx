@@ -12,7 +12,7 @@ export default function Payments() {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://generalcommittee-dev.azurewebsites.net/api/orders",
+          "https://mentalhealthcareapi20250307003056.azurewebsites.net/api/orders",
           {
             params: { PageNumber: pageNumber, PageSize: pageSize },
             headers: { Authorization: `Bearer ${token}` },

@@ -86,7 +86,7 @@ export default function AddResources() {
       const token = localStorage.getItem("token");
       try {
         const res = await axios.post(
-          `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/${lessonId}/Resources`,
+          `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/${lessonId}/Resources`,
           formData,
           {
             headers: {

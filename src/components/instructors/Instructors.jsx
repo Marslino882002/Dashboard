@@ -26,7 +26,7 @@ export default function Instructors() {
     setError(null);
     try {
       const response = await axios.get(
-        'https://generalcommittee-dev.azurewebsites.net/Instructor',
+        'https://mentalhealthcareapi20250307003056.azurewebsites.net/Instructor',
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -74,7 +74,7 @@ export default function Instructors() {
       try {
         setLoading(true);
         await axios.post(
-          'https://generalcommittee-dev.azurewebsites.net/Instructor',
+          'https://mentalhealthcareapi20250307003056.azurewebsites.net/Instructor',
           formData,
           {
             headers: {
@@ -119,7 +119,7 @@ export default function Instructors() {
     try {
       setLoading(true);
       await axios.delete(
-        `https://generalcommittee-dev.azurewebsites.net/Instructor/${selectedInstructorIndex}`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/Instructor/${selectedInstructorIndex}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

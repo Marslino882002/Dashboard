@@ -21,7 +21,7 @@ export default function Lesson() {
     
     try {
       const response = await axios.get(
-        `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

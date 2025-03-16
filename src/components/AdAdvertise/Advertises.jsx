@@ -71,7 +71,7 @@ export default function Advertises() {
 
     try {
       const response = await axios.get(
-        "https://generalcommittee-dev.azurewebsites.net/Advertisement",
+        "https://mentalhealthcareapi20250307003056.azurewebsites.net/Advertisement",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -128,7 +128,7 @@ export default function Advertises() {
     try {
       // Make the DELETE API call
       await axios.delete(
-        `https://generalcommittee-dev.azurewebsites.net/Advertisement/${selectedAd.advertisementId}`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/Advertisement/${selectedAd.advertisementId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

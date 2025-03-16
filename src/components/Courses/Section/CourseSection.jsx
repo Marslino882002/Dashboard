@@ -20,7 +20,7 @@ export default function CourseSection() {
       setLoading(true);
       try {
         const response = await axios.get(
-          `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections`,
+          `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections`,
           {
             headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
           }
@@ -46,7 +46,7 @@ export default function CourseSection() {
   const handleRemoveSection = async (id) => {
     try {
       await axios.delete(
-        `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${id}`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${id}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,  // Authorization header

@@ -45,7 +45,7 @@ import { useNavigate } from "react-router-dom";
           // Axios POST request
           const token = localStorage.getItem("token"); // Retrieve token from localStorage
           const response = await axios.post(
-            "https://generalcommittee-dev.azurewebsites.net/Advertisement",
+            "https://mentalhealthcareapi20250307003056.azurewebsites.net/Advertisement",
             formData,
             {
               headers: {

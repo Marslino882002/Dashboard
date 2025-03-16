@@ -97,7 +97,7 @@
       
         try {
           const response = await axios.post(
-            "https://generalcommittee-dev.azurewebsites.net/api/courses",
+            "https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses",
             courseData,
             { headers: { Authorization: `Bearer ${token}` } }
           );
@@ -147,7 +147,7 @@
         // console.log("Uploading Thumbnail...", formData.get("File")); // Debugging
     
         const response = await axios.post(
-          `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/thumbnail`,
+          `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/thumbnail`,
           formData,
           {
             headers: {

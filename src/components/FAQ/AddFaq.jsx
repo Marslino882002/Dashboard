@@ -34,7 +34,7 @@ export default function AddFaq() {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.post(
-          "https://generalcommittee-dev.azurewebsites.net/api/helpcenter",
+          "https://mentalhealthcareapi20250307003056.azurewebsites.net/api/helpcenter",
           {
             helpCenterItemType: parseInt(faqNumber),
             name: values.name,

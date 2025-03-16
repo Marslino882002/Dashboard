@@ -28,7 +28,7 @@ export default function AddSection() {
       try {
         // API Call
         const response = await axios.post(
-          `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections`,
+          `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections`,
           { name: values.name },
           {
             headers: {

@@ -14,7 +14,7 @@ export default function Resources() {
       try {
         const token = localStorage.getItem("token");
         const response = await axios.get(
-          `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/${lessonId}/Resources`,
+          `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/${lessonId}/Resources`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -70,7 +70,7 @@ export default function Resources() {
     try {
       const token = localStorage.getItem("token");
       await axios.delete(
-        `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/${lessonId}/Resources/${id}`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/${lessonId}/Resources/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

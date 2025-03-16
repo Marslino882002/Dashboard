@@ -21,7 +21,7 @@ export default function InfoPage() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.get(
-        `https://generalcommittee-dev.azurewebsites.net/api/helpcenter`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/helpcenter`,
         {
           params: { itemType: selectedPageType },
           headers: { Authorization: `Bearer ${token}` },
@@ -47,7 +47,7 @@ export default function InfoPage() {
     setLoading(true);  // Start loading when delete is initiated
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`https://generalcommittee-dev.azurewebsites.net/api/helpcenter`, {
+      await axios.delete(`https://mentalhealthcareapi20250307003056.azurewebsites.net/api/helpcenter`, {
         headers: { Authorization: `Bearer ${token}` },
         data: { helpCenterId },
       });

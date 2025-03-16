@@ -43,7 +43,7 @@ export default function AddLesson() {
 
       // First API call to get authorization data for uploading
       const authResponse = await axios.post(
-        `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/video`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/video`,
         { title: values.title, lengthWithSeconds: 60 },
         {
           headers: {
@@ -79,7 +79,7 @@ export default function AddLesson() {
           // Confirm the video after the upload is complete
           try {
             const confirmResponse = await axios.post(
-              `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/video/confirm`,
+              `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/video/confirm`,
               {
                 videoId: authData.videoId,
                 confirmed: true,
@@ -137,7 +137,7 @@ export default function AddLesson() {
       formData.append("SectionId", sectionId);
 
       const res = await axios.post(
-        `https://generalcommittee-dev.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/pdf`,
+        `https://mentalhealthcareapi20250307003056.azurewebsites.net/api/courses/${courseId}/sections/${sectionId}/lessons/pdf`,
         formData,
         {
           headers: {

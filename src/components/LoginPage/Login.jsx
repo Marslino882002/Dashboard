@@ -31,7 +31,7 @@ export default function Login() {
 
     try {
       const response = await axios.post(
-        'https://generalcommittee-dev.azurewebsites.net/api/admin/login',
+        'https://mentalhealthcareapi20250307003056.azurewebsites.net/api/admin/login',
         loginPayload
       );
 
