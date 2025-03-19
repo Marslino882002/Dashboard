@@ -1,4 +1,4 @@
-  import React, { useState } from "react";
+import React, { useState } from "react";
   import { useFormik } from "formik";
   import * as Yup from "yup";
   import { ToastContainer, toast } from "react-toastify";
@@ -84,8 +84,9 @@
           name: values.name,
           price: values.price,
           description: values.description,
-          instructorId: 4,
-          categoryId: [parseInt(categoryId)],
+          instructorId: 7,
+          categoryId: [6],
+          // categoryId: [parseInt(categoryId)],
         };
       
         const token = localStorage.getItem("token");
